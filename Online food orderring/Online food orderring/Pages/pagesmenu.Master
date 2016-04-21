@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pagesmenu.master.cs" Inherits="Online_food_orderring.Pages.pagesmenu" %>
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Food ordering system</title>
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--Animation-->
+<script src="../js/wow.min.js"></script>
+<link href="../css/animate.css" rel='stylesheet' type='text/css' />
+<script>
+    new WOW().init();
+</script>
+<script type="text/javascript" src="../js/move-top.js"></script>
+<script type="text/javascript" src="../js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+        });
+    });
+		</script>
+    <style type="text/css">
+        .auto-style1 {
+            font-weight: bold;
+            font-size: 1em;
+            color: #E24425;
+        }
+        .auto-style2 {
+            float: none;
+            color: #33CC33;
+            font-size: xx-large;
+        }
+        .auto-style3 {
+            width: 100%;
+            color: #CCCCCC;
+            margin: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!-- header-section-starts -->
+	<div class="header">
+		<div class="container">
+			<div class="top-header">
+				<div class="auto-style2">
+					<strong>Online Food Orderring </strong>
+				</div>
+				<div class="queries">
+					<p><span class="auto-style1">Available</span><span> </span><label>(11AM to 11PM)</label></p>
+				</div>
+			</div>
+		</div>
+        
+			<div class="menu-bar">
+                <div class="container">
+                    <div class="top-menu">
+                    </div>
+                    <div class="login-section">
+                    </div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        
+                            </asp:ContentPlaceHolder>
+                    </div>
+                    
+                   
+                        
+                </div>
+        
+		</div>
+            
+	</div>
+	<!-- header-section-ends -->
+	<!-- content-section-starts -->
+	<div class="content">
+		<div class="ordering-section" id="Order">
+			<div class="container">
+                
+			    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                
+			</div>
+
+		</div>
+
+		<div class="service-section">
+			<div class="service-section-bottom-row">
+			</div>
+		</div>
+
+		<div class="contact-section" id="contact">
+			<div class="auto-style3">
+			    @All Rights Reserved</div>
+		</div>
+
+	</div>
+
+	<!-- content-section-ends -->
+	<!-- footer-section-starts -->
+
+    </form>
+
+</body>
+</html>
+
+
+
